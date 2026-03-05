@@ -1,0 +1,26 @@
+app:
+  name: vpp
+  version: 1.0.0
+database:
+  host: 192.168.50.39
+  port: 5432
+  user: postgres
+  password: Anjie@2025
+  database: virtual_power
+  pool:
+    max_open_conns: 10
+    max_idle_conns: 20
+    conn_max_lifetime: 60
+redis:
+  host: 192.168.50.39
+  port: 6379
+  password: Anjie@2025
+  db: 3
+  pool:
+    poolSize: 10
+    maxWait: 10
+    maxIdle: 10
+xxlJob:
+  admin:
+    address: http://192.168.50.39:8080/xxl-job-admin
+    accessToken: ajiot_token
